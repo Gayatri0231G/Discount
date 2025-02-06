@@ -241,7 +241,7 @@
     color: red;
     font-weight: bold;
     font-size: 14px;
-    
+    margin-bottom: 45px;
     
   }
   
@@ -250,12 +250,14 @@
     flex-direction: column;
     align-items: center;
     gap: 0px;
+    /* margin-bottom: 50px; */
   }
   
   .original-price {
     text-decoration: line-through;
     color: gray;
     font-size: 12px;
+    margin-right: 50px;
   }
   
   .discounted-price {
