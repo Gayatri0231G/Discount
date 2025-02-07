@@ -1,136 +1,9 @@
-/* .discount-section {
-    padding: 0px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    text-align: center;
-    width: 1000px;
-  }
-  .top-section {
-    display: flex; 
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-  }
-  
-  .logo-icon {
-    width: 0px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .restaurant-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0px;
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 20px;
-  }
-
-  .countdown-box {
-    background: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-    width: 100px;
-    height: 5px;
-
-  }
-  
-  .countdown {
-    color: gray;
-    font-weight: bold;
-    
-  }
-  
-  .time {
-    color: red;
-    font-weight: bold;
-     margin-left: 2px; 
-  }
-  
-  .items-container {
-    display: flex;
-    overflow-x: auto;
-  }
-  
-  .item-card {
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 10px;
-    width: 250px;
-    height: 310px;
-    text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 30px;
-  }
-  
-  .item-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1px;
-  }
-  
-  .availability {
-    font-size: 12px;
-    color: gray;
-    margin-bottom: 1px;
-  }
-  
-  .item-name {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 1px;
-  }
-  
-  .original-price {
-    text-decoration: line-through;
-    color: gray;
-    font-size: 12px;
-    margin-bottom: 1px;
-  }
-  
-  .discounted-price {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .order-button {
-    background: black;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 5px;
-    align-self: flex-start;
-  }
-  */
-
   .discount-section {
     padding: 0px;
     background-color: #f8f8f8;
     border-radius: 10px;
     text-align: center;
-    width: 1000px;
+    width: 900px;
   }
   
   .top-section {
@@ -140,6 +13,8 @@
     padding: 10px 20px;
     border-radius: 0px;
   }
+  
+  
   
   .restaurant-name {
     font-size: 18px;
@@ -159,8 +34,8 @@
   
   .countdown-box {
     background: white;
-    padding: 5px 15px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -191,8 +66,8 @@
     background: #f9f9f9;
     padding: 10px;
     border-radius: 10px;
-    width: 250px;
-    height: 310px;
+    width: 200px;
+    height: 250px;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -226,52 +101,53 @@
   
   .item-name {
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-bottom: 5px;
   }
-  
   .price-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%; 
-  }
-  
-  .discount {
-    color: red;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 45px;
-    
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
   
   .price-details {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0px;
-    /* margin-bottom: 50px; */
+    justify-content: space-between; 
+    width: 50%;
+  }
+  
+  .discount {
+    background-color: #FDEAEA;
+    color: #e85869;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 5px;
   }
   
   .original-price {
     text-decoration: line-through;
     color: gray;
     font-size: 12px;
-    margin-right: 50px;
-  }
-  
-  .discounted-price {
-    font-size: 16px;
-    font-weight: bold;
-   
+    flex-grow: 3; /* Allows spacing between original price and order button */
   }
   
   .order-button {
     background: black;
     color: white;
-    padding: 8px 12px;
+    padding: 6px 20px;
+    align-self: flex-end;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    
+    font-size: 12px;
+  }
+  
+  .discounted-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
   }
